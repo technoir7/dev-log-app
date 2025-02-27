@@ -7,7 +7,7 @@
 .known-issues-table th,
 .known-issues-table td {
   padding: 0.75rem;
-  border: 1px solid #e2e8f0;
+  border: 1px solid #d0d7de;
 }
 
 .known-issues-table th {
@@ -103,5 +103,5 @@
 }
 
 .issue-description {
-  color: #2d3748;
+  color: white;
 }
