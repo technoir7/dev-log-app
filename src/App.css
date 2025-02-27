@@ -167,7 +167,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .known-issues-table tr:hover {
-  background-color: #f8f8f8;
+  background-color: #121212;
 }
 
 .issue-id {
@@ -260,7 +260,7 @@ select.issue-input {
 } */
 
 .message:hover {
-  background-color: #f8f8f8;
+  background-color: #121212;
 }
 
 .logo {
