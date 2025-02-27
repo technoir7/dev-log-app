@@ -1,0 +1,178 @@
+#root {
+  font-family: sans-serif;
+  line-height: 1.6;
+  font-size: 16px;
+  background-color: #121212; /* Dark background for the whole app */
+  color: #ffffff; /* White text color */
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: #1e1e1e; /* Darker container background */
+  color: #ffffff; /* White text color */
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+nav li {
+  margin: 0 20px;
+}
+
+nav a {
+  font-size: 1.2em;
+  text-decoration: none;
+  color: #333;
+}
+
+.role-selector {
+  margin-bottom: 25px;
+}
+
+.message-area {
+  flex: none;
+  padding: 25px;
+  box-sizing: border-box;
+  width: 90%;
+  max-width: 1200px;
+  margin-bottom: 30px;
+}
+
+.messages-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 0;
+  margin-top: 25px;
+  height: 500px;
+  overflow-y: auto;
+  width: 100%;
+  background-color: #252525;
+}
+
+.message {
+  position: relative;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  background-color: transparent;
+}
+
+/* Remove or comment out these styles:
+.message.developer {
+  background-color: #e0e0e0;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+*/
+
+.message.entrepreneur {
+  background-color: #f5f5f5;
+  border: 1px solid #007bff;
+  border-radius: 6px;
+}
+
+.developer-details {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid #e2e8f0;
+}
+
+.chat-log, .message-input-ui {
+  width: 95vw;
+  max-width: 1400px;
+  padding: 30px;
+  box-sizing: border-box;
+  background-color: #252525; /* Dark background for chat log and input */
+  color: #ffffff; /* White text color */
+  border-radius: 0; /* No rounded corners */
+}
+
+.message-content {
+  flex: 1; /* Take up remaining space */
+  text-align: left; /* Explicitly left justify text */
+}
+
+.message-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%; /* Circular avatar */
+  margin-right: 15px; /* Spacing between avatar and text */
+  background-color: #aaa; /* Default avatar color */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #eee; /* Lighter avatar text color */
+  font-weight: bold;
+}
+
+.message.entrepreneur .message-avatar {
+  background-color: rgb(88, 96, 96); /* Blue avatar for entrepreneur */
+}
+
+.message.developer .message-avatar {
+  background-color: rgba(243, 146, 146, 0.523); /* Red avatar for developer */
+}
+
+.message-title {
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-size: 1.2em;
+  color: #333;
+}
+
+.message-close-button {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  cursor: pointer;
+  font-size: 1.2em;
+  color: #888;
+  border: none;
+  background: none;
+  padding: 0;
+}
+
+textarea {
+  width: 90%;
+  height: 120px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  font-size: 1.1em;
+  padding: 10px;
+  border-radius: 10px; /* Rounded textarea */
+  border: 1px solid #555; /* Darker border to textarea */
+  background-color: #252525; /* Dark background for textarea */
+  color: #ffffff; /* White text color */
+}
+
+h2, h3 {
+  font-size: 1.5em;
+  margin-bottom: 15px;
+  color: #ffffff;
+}
+
+.chat-log h2 {
+  color: #ffffff;
+}
+
+.role-selector label, .role-selector select {
+  font-size: 1.1em;
+  color: #ffffff; /* White text color */
+}
+
+/* Dummy CSS rule to force refresh */
+.dummy-class {
+  color: red;
+}
