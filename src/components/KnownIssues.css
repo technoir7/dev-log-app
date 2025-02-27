@@ -11,7 +11,7 @@
 }
 
 .known-issues-table th {
-  background-color: #f7fafc;
+  background-color: #181818;
   font-weight: 600;
   text-align: left;
   position: relative;
@@ -24,7 +24,7 @@
 }
 
 .known-issues-table th.sortable:hover {
-  background-color: #edf2f7;
+  background-color: #252525;
 }
 
 .sort-icon {
