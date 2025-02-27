@@ -42,7 +42,7 @@
   justify-content: center;
   gap: 1rem;
   padding: 0.75rem;
-  background-color: #121212;
+  background-color: #383737;
   border-bottom: 1px solid #424242;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
   overflow-x: auto;
@@ -81,7 +81,7 @@
 }
 
 .nav-link {
-  color: #9ad3bb;
+  color: #666;
   text-decoration: none;
   font-size: 1.2rem;
   padding: 0.5rem 1rem;
@@ -99,7 +99,7 @@
 .known-issues-page,
 .message-input-ui,
 .known-issues-input {
-  background: #121212;
+  background: #1e1e1e;
   border: 1px solid #424242;
   border-radius: 8px;
   padding: 1.5rem;
@@ -160,14 +160,14 @@ h1, h2, h3, h4, h5, h6 {
   text-align: left;
   padding: 1rem;
   border-bottom: 2px solid #424242;
-  color: #9ad3bb;
+  color: #666;
   font-weight: 500;
 }
 
 .known-issues-table td {
   padding: 1rem;
   border-bottom: 1px solid #424242;
-  color: #c2f0de;
+  color: #666;
 }
 
 .known-issues-table tr:hover {
@@ -181,7 +181,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .issue-description {
-  color: #c2f0de;
+  color: #666;
 }
 
 /* Issue Input Form */
@@ -197,17 +197,17 @@ h1, h2, h3, h4, h5, h6 {
 .form-group label {
   display: block;
   margin-bottom: 0.5rem;
-  color: #9ad3bb;
+  color: #666;
   font-size: 0.95rem;
 }
 
 .issue-input {
   width: 100%;
   padding: 0.75rem;
-  border: 1px solid #424242;
+  border: 1px solid #232323;
   border-radius: 4px;
   font-size: 1rem;
-  color: #c2f0de;
+  color: #969595;
   background: #121212;
   transition: border-color 0.3s ease;
 }
@@ -231,7 +231,7 @@ select.issue-input {
 }
 
 .submit-button {
-  background: #9ad3bb;
+  background: #666;
   color: white;
   border: none;
   padding: 0.75rem 1.5rem;
