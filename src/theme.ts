@@ -14,8 +14,8 @@ export const theme = {
     textMuted: '#999999',
     
     // Border colors
-    borderLight: '#333333',
-    borderDark: '#0a0a0a',
+    borderLight: '#484848',  // Updated to be lighter than backgrounds
+    borderDark: '#2a2a2a',   // Updated to be lighter than darkest background
     
     // Status colors (now grayscale)
     statusLow: '#4a5568',    // Kept as is (dark gray)

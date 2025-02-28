@@ -133,7 +133,7 @@ body {
   margin: 1rem auto;
   border-radius: 0.625rem;
   background-color: #1e1e1e;
-  border: 1px solid #333;
+  border: 1px solid #484848;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
@@ -290,7 +290,8 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 1rem;
   font-size: 0.95rem;
   overflow-x: auto;
-  display: block;
+  display: table;
+  max-width: 100%;
 }
 
 @media (max-width: 768px) {
