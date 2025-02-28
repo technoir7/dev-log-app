@@ -42,7 +42,7 @@
 
 /* Developer message style */
 .chat-log .messages-container .message.developer {
-  background-color: #252525;
+  background-color: var(--dev-bg-color);
   border: 2px solid #484848;
 }
 
