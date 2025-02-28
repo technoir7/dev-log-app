@@ -11,17 +11,6 @@ interface EditingMessage extends Message {
 function ChatLog() {
   const [messages, setMessages] = useState<EditingMessage[]>([]);
 
-  const messageStyle = {
-    developer: {
-      border: '2px solid var(--darkreader-border-333333, #000000)',
-      backgroundColor: 'var(--darkreader-background-353230, #353230)'
-    },
-    entrepreneur: {
-      border: '1px solid var(--darkreader-border-4c4c4c, #333)',
-      backgroundColor: 'var(--darkreader-background-1e1e1e, #1e1e1e)'
-    }
-  };
-
   useEffect(() => {
     // Initial fetch of messages
     fetchMessages();
@@ -139,7 +128,6 @@ function ChatLog() {
           <div 
             key={`message-${message.id || index}`} 
             className={`message ${message.role}`}
-            style={messageStyle[message.role]}
           >
             <div className="message-content">
               {message.isEditing ? (

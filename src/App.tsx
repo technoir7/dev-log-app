@@ -13,10 +13,10 @@ function App() {
       <div className="app-container">
         <nav className="nav-bar">
           <div className="nav-bar-inner">
-            <Link to="/message" className="nav-link" style={{ color: '#ffffff' }}>Message Client</Link>
-            <Link to="/report-issue" className="nav-link" style={{ color: '#ffffff' }}>Report Issue</Link>
-            <Link to="/chatlog" className="nav-link" style={{ color: '#ffffff' }}>Chat Log</Link>
-            <Link to="/known-issues" className="nav-link" style={{ color: '#ffffff' }}>Known Issues</Link>
+            <Link to="/message" className="nav-link">Message Client</Link>
+            <Link to="/report-issue" className="nav-link">Report Issue</Link>
+            <Link to="/chatlog" className="nav-link">Chat Log</Link>
+            <Link to="/known-issues" className="nav-link">Known Issues</Link>
           </div>
         </nav>
 

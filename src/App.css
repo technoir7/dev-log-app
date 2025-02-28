@@ -1,3 +1,29 @@
+/* Import fonts if needed */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+/* Reset and base styles */
+:root {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  
+  /* Use theme colors */
+  color: #ffffff;
+  background-color: #0d0d0d;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  background-color: #1e1e1e;
+}
+
 #root {
   width: 100%;
   margin: 0 auto;
@@ -42,7 +68,7 @@
   justify-content: center;
   gap: 1rem;
   padding: 0.75rem;
-  background-color: #383737;
+  background-color: #1e1e1e;
   border-bottom: 1px solid #424242;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
   overflow-x: auto;
@@ -81,7 +107,7 @@
 }
 
 .nav-link {
-  color: #9ad3bb;
+  color: #ffffff;
   text-decoration: none;
   font-size: 1.2rem;
   padding: 0.5rem 1rem;
@@ -99,31 +125,160 @@
 .known-issues-page,
 .message-input-ui,
 .known-issues-input {
-  background: #1e1e1e;
-  border: 1px solid #424242;
-  border-radius: 8px;
-  padding: 1.5rem;
-  margin: 0.75rem;
+  display: flex;
+  flex-direction: column;
   width: 100%;
   max-width: 1200px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-  align-self: center;
+  padding: 1.25rem;
+  margin: 1rem auto;
+  border-radius: 0.625rem;
+  background-color: #1e1e1e;
+  border: 1px solid #333;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Form Elements */
+.form-group {
+  margin-bottom: 1rem;
+  width: 100%;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  color: #ffffff;
+  text-align: left;
+}
+
+textarea.issue-input,
+select.issue-input,
+input.issue-input {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #333;
+  border-radius: 0.5rem;
+  background-color: #1e1e1e;
+  color: #ffffff;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+textarea.issue-input {
+  min-height: 100px;
+  resize: vertical;
+}
+
+textarea.issue-input:focus,
+select.issue-input:focus,
+input.issue-input:focus {
+  outline: none;
+  border-color: #9ad3bb;
+}
+
+/* Buttons */
+button {
+  cursor: pointer;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 500;
+  border: none;
+  border-radius: 0.5rem;
+  background-color: #718096;
+  color: white;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: #4a5568;
+}
+
+.submit-button {
+  margin-top: 1rem;
+  width: auto;
+  align-self: flex-end;
+}
+
+/* Icon Buttons */
+.icon-button {
+  padding: 0.5rem;
+  border: none;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  transition: all 0.2s;
+}
+
+.icon-button:hover {
+  opacity: 0.8;
+}
+
+.icon-button.edit {
+  background-color: #4a5568;
+  color: white;
+}
+
+.icon-button.delete {
+  background-color: #2d3748;
+  color: white;
+}
+
+.icon-button.save {
+  background-color: #718096;
+  color: white;
+}
+
+.icon-button.cancel {
+  background-color: #a0aec0;
+  color: white;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+  color: #ffffff;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+/* Status Colors */
+.status-low {
+  color: #4a5568;
+}
+
+.status-medium {
+  color: #f6ad55;
+}
+
+.status-high {
+  color: #f56565;
+}
+
+.status-critical {
+  color: #e53e3e;
+}
+
+/* Global Utility Classes */
+.text-center {
+  text-align: center;
+}
+
+.mt-1 {
+  margin-top: 1rem;
+}
+
+.mb-1 {
+  margin-bottom: 1rem;
 }
 
 /* Keep titles centered */
 h1, h2, h3, h4, h5, h6 {
   text-align: center;
-}
-
-@media (max-width: 768px) {
-  .chat-log,
-  .known-issues-page,
-  .message-input-ui,
-  .known-issues-input {
-    padding: 0.75rem;
-    margin: 0.25rem;
-    border-radius: 4px;
-  }
 }
 
 /* Known Issues Table */
@@ -184,7 +339,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .issue-description {
 
-  color: #666;
+  color: #cccccc;
 
 }
 
@@ -192,62 +347,6 @@ h1, h2, h3, h4, h5, h6 {
 .issue-form {
   max-width: 800px;
   margin: 0 auto;
-}
-
-.form-group {
-  margin-bottom: 1.5rem;
-}
-
-.form-group label {
-  display: block;
-  margin-bottom: 0.5rem;
-  color: #9ad3bb;
-  font-size: 0.95rem;
-}
-
-.issue-input {
-  width: 100%;
-  padding: 0.75rem;
-
-  border: 1px solid #232323;
-  border-radius: 4px;
-  font-size: 1rem;
-  color: #969595;
-  background: #121212;
-  transition: border-color 0.3s ease;
-}
-
-.issue-input:focus {
-  outline: none;
-  border-color: #9ad3bb;
-}
-
-textarea.issue-input {
-  min-height: 120px;
-  resize: vertical;
-}
-
-select.issue-input {
-  appearance: none;
-  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24'%3E%3Cpath fill='%239ad3bb' d='M7 10l5 5 5-5z'/%3E%3C/svg%3E");
-  background-repeat: no-repeat;
-  background-position: right 0.75rem center;
-  padding-right: 2.5rem;
-}
-
-.submit-button {
-  background: #9ad3bb;
-  color: white;
-  border: none;
-  padding: 0.75rem 1.5rem;
-  border-radius: 4px;
-  font-size: 1rem;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.submit-button:hover {
-  background: #c2f0de;
 }
 
 /* Chat Log Messages

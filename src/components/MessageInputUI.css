@@ -1,0 +1,154 @@
+/* Message Input UI Styling */
+.message-input-ui {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1200px;
+  padding: 1.25rem;
+  margin: 1rem auto;
+  border-radius: 0.625rem;
+  background-color: #252525;
+  border: 1px solid #333;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Role selector styling */
+.role-selector {
+  margin-bottom: 1.5rem;
+  width: 100%;
+  text-align: left;
+}
+
+.role-selector label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  color: #ffffff;
+}
+
+.role-selector select {
+  padding: 0.75rem;
+  width: 100%;
+  max-width: 300px;
+  border: 1px solid #333;
+  border-radius: 0.5rem;
+  background-color: #1e1e1e;
+  color: #ffffff;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.role-selector select:focus {
+  outline: none;
+  border-color: #9ad3bb;
+}
+
+/* Message input area */
+.message-input-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.message-input-container textarea {
+  width: 100%;
+  min-height: 120px;
+  padding: 0.75rem;
+  border: 1px solid #333;
+  border-radius: 0.5rem;
+  background-color: #1e1e1e;
+  color: #ffffff;
+  font-size: 1rem;
+  resize: vertical;
+  transition: border-color 0.3s ease;
+}
+
+.message-input-container textarea:focus {
+  outline: none;
+  border-color: #9ad3bb;
+}
+
+/* Developer questions section */
+.questions {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+}
+
+.question {
+  width: 100%;
+  text-align: left;
+}
+
+.question input,
+.question textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #333;
+  border-radius: 0.5rem;
+  background-color: #1e1e1e;
+  color: #ffffff;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.question textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+.question input:focus,
+.question textarea:focus {
+  outline: none;
+  border-color: #9ad3bb;
+}
+
+/* Send button */
+.message-input-container button,
+.send-button {
+  align-self: flex-end;
+  margin-top: 1rem;
+  padding: 0.75rem 1.5rem;
+  background-color: #718096;
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.message-input-container button:hover,
+.send-button:hover {
+  background-color: #4a5568;
+}
+
+.message-input-container button:disabled,
+.send-button:disabled {
+  background-color: #4a5568;
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .message-input-ui {
+    padding: 1rem;
+  }
+  
+  .role-selector select,
+  .message-input-container textarea,
+  .question input,
+  .question textarea {
+    padding: 0.5rem;
+    font-size: 0.875rem;
+  }
+  
+  .message-input-container button,
+  .send-button {
+    padding: 0.5rem 1rem;
+    font-size: 0.875rem;
+  }
+}
