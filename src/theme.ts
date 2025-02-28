@@ -5,8 +5,8 @@ export const theme = {
     // Primary UI colors
     primary: '#252525',
     secondary: '#1e1e1e',
-    accent: '#9ad3bb',
-    accentHover: '#c2f0de',
+    accent: '#808080',      // Changed to mid-gray
+    accentHover: '#a0a0a0', // Changed to light gray
     
     // Text colors
     textPrimary: '#ffffff',
@@ -17,20 +17,20 @@ export const theme = {
     borderLight: '#333333',
     borderDark: '#0a0a0a',
     
-    // Status colors
-    statusLow: '#4a5568',
-    statusMedium: '#f6ad55', 
-    statusHigh: '#f56565',
-    statusCritical: '#e53e3e',
+    // Status colors (now grayscale)
+    statusLow: '#4a5568',    // Kept as is (dark gray)
+    statusMedium: '#777777', // Changed to mid-gray
+    statusHigh: '#999999',   // Changed to light gray
+    statusCritical: '#bbbbbb', // Changed to very light gray
     
     // UI element colors
     navBackground: '#383737',
     cardBackground: '#252525',
     inputBackground: '#1e1e1e',
-    buttonPrimary: '#718096',
-    buttonSecondary: '#4a5568',
-    buttonDanger: '#2d3748',
-    buttonCancel: '#a0aec0',
+    buttonPrimary: '#718096', // Kept as is (grayish)
+    buttonSecondary: '#4a5568', // Kept as is (darker gray)
+    buttonDanger: '#2d3748',  // Kept as is (very dark gray)
+    buttonCancel: '#a0aec0',  // Kept as is (light gray)
     iconButtonEdit: '#4a5568',
     iconButtonDelete: '#2d3748',
     iconButtonSave: '#718096',
