@@ -15,8 +15,8 @@
 /* Role selector styling */
 .role-selector {
   margin-bottom: 1.5rem;
-  width: 100%;
-  text-align: left;
+  width: 100%; /* Changed to 100% */
+  text-align: center;
 }
 
 .role-selector label {
@@ -28,12 +28,14 @@
 
 .role-selector select {
   padding: 0.75rem;
-  width: 100%;
-  max-width: 300px;
+  width: fit-content;
+  max-width: none;
+  align-self: flex-start;
+  /* flex-grow: 1;  Removed flex-grow */
   border: 1px solid #333;
   border-radius: 0.5rem;
-  background-color: #1e1e1e;
-  color: #ffffff;
+  background-color: #262626;
+  color: #a1a1a1;
   font-size: 1rem;
   transition: border-color 0.3s ease;
 }
@@ -51,7 +53,7 @@
 }
 
 .message-input-container textarea {
-  width: 100%;
+  width: 100%; /* Changed to 100% */
   min-height: 120px;
   padding: 0.75rem;
   border: 1px solid #333;
@@ -66,6 +68,7 @@
 .message-input-container textarea:focus {
   outline: none;
   border-color: #9ad3bb;
+  flex-grow: 1; /* Added flex-grow */
 }
 
 /* Developer questions section */
