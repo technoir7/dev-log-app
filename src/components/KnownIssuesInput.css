@@ -1,0 +1,105 @@
+/* KnownIssuesInput.css */
+.known-issues-input {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1200px;
+  padding: 1.25rem;
+  margin: 1rem auto;
+  border-radius: 0.625rem;
+  background-color: #1e1e1e;
+  border: 1px solid #333;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.issue-form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 100%;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+  width: 100%;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  color: #ffffff;
+  text-align: left;
+}
+
+.issue-input {
+  width: 100%;
+  max-width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #333;
+  border-radius: 0.5rem;
+  background-color: #252525;
+  color: #ffffff;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+  box-sizing: border-box;
+}
+
+textarea.issue-input {
+  min-height: 150px;
+  resize: vertical;
+}
+
+.issue-input:focus {
+  outline: none;
+  border-color: #9ad3bb;
+}
+
+.submit-button {
+  margin-top: 1.5rem;
+  padding: 0.75rem 2rem;
+  background-color: #718096;
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  font-weight: 500;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  align-self: flex-end;
+  width: auto;
+}
+
+.submit-button:hover {
+  background-color: #4a5568;
+}
+
+h2 {
+  color: #ffffff;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .known-issues-input {
+    padding: 1rem;
+  }
+  
+  .form-group {
+    margin-bottom: 1rem;
+  }
+  
+  .issue-input {
+    padding: 0.5rem;
+  }
+  
+  textarea.issue-input {
+    min-height: 120px;
+  }
+  
+  .submit-button {
+    padding: 0.5rem 1rem;
+    font-size: 0.875rem;
+  }
+}

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { supabase } from '../lib/supabase';
 import { useNavigate } from 'react-router-dom';
+import './KnownIssuesInput.css';
 
 function KnownIssuesInput() {
   const [description, setDescription] = useState('');
